@@ -8,13 +8,13 @@ import os
 list_of_choices=['punch', 'body-slam', 'round-house kick to the face']
 githublink = 'https://github.com/austinlasseter/chuck_norris_execution'
 image1='chucknorris.jpg'
-heading1='Chuck Norris execution method'
+heading1='The Best Chuck Norris execution method'
 
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
-app.title='Chuck'
+app.title='Chuck watches you!'
 
 ####### Layout of the app ########
 app.layout = html.Div([
@@ -36,7 +36,7 @@ app.layout = html.Div([
 @app.callback(dash.dependencies.Output('your-output-here', 'children'),
               [dash.dependencies.Input('your-input-here', 'value')])
 def display_value(whatever_you_chose):
-    return f'Chuck Norris will now execute you with a {whatever_you_chose}.'
+    return f'You deserved it! Chuck Norris will now execute you with a {whatever_you_chose}.'
 
 
 ######### Run the app #########
