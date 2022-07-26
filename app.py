@@ -63,7 +63,7 @@ app.layout = html.Div([
 def display_value(choice):
     label = list_of_choices[choice]["label"]
     action = list_of_choices[choice]["action"]
-    return f'Great choice going with a {label}.', action
+    return f'Enjoy this awesome image of {label}.', action
 
 
 ######### Run the app #########
