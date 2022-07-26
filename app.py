@@ -5,10 +5,33 @@ from dash import html
 import os
 
 ###### Set up variables
-list_of_choices=['Gorgeous Jupiter', 'Giant Nebula', 'Westerlund 2', 'Eagle Nebula Pillars of Creation', 'Molten Ring', "Webb's First Deep Field"]
-list_of_pics=['1_hubble.jpeg', '2_hubble.jpeg', '3_hubble.jpeg', '4_hubble.jpeg', '5_hubble.jpeg', 'JWST_first.jpeg']
+list_of_choices=[
+			{
+			"label": "Gorgeous Jupiter",
+			"action": '1_hubble.jpeg'
+		        },
+		        {
+			"label": "Giant Nebula",
+			"action": "2_hubble.jpeg"
+		        },
+		        {
+			"label": "Westerlund 2",
+			"action": "3_hubble.jpeg"
+		        },
+		        {
+			"label": "Eagle Nebula Pillars of Creation",
+			"action": "4_hubble.jpeg"
+		        },
+		        {
+			"label": "Molten Ring",
+			"action": "5_hubble.jpeg"
+		        },
+		        {
+			"label": "Webb's First Deep Field",
+			"action": "JWST_first.jpeg"
+		        }
+		]
 githublink = 'https://github.com/vkhvan/chuck_norris_execution'
-
 heading1='Top 5 images from Hubble Telescope. And finally first image from an amazing JWST!'
 
 ########### Initiate the app
@@ -20,21 +43,13 @@ app.title='Look at the sky!'
 ####### Layout of the app ########
 app.layout = html.Div([
     html.H2(heading1),
-    html.Br(),
+    html.Img(src=image1, style={'width': 'auto', 'height': 'auto'}),
     dcc.Dropdown(id='your-input-here',
-                options=[
-				{'label': list_of_choices[0], 'action': list_of_pics[0]},
-				{'label': list_of_choices[1], 'action': list_of_pics[1]},
-				{'label': list_of_choices[2], 'action': list_of_pics[2]},
-				{'label': list_of_choices[3], 'action': list_of_pics[3]},
-				{'label': list_of_choices[4], 'action': list_of_pics[4]},
-				{'label': list_of_choices[5], 'action': list_of_pics[5]}
-			],
-                value=list_of_pics[0],
+                options=[{'label': i["label"], 'value': choi} for choi,i in enumerate(list_of_choices)],
+                value=0,
                 style={'width': '500px'}),
     html.Br(),
     html.Div(id='your-output-here', children=''),
-    html.Br(),
     html.Img(src='', style={'width': '50%', 'height':'50%'}, id='action'),
     html.Br(),
     html.A('Code on Github', href=githublink),
