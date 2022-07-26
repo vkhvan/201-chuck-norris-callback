@@ -7,31 +7,31 @@ import os
 
 ###### Set up variables
 list_of_choices=[
-			{
-			"label": "Gorgeous Jupiter",
-			"action": "1_hubble.jpeg"
-		        },
-		        {
-			"label": "Giant Nebula",
-			"action": "2_hubble.jpeg"
-		        },
-		        {
-			"label": "Westerlund 2",
-			"action": "3_hubble.jpeg"
-		        },
-		        {
-			"label": "Eagle Nebula Pillars of Creation",
-			"action": "4_hubble.jpeg"
-		        },
-		        {
-			"label": "Molten Ring",
-			"action": "5_hubble.jpeg"
-		        },
-		        {
-			"label": "Webb's First Deep Field",
-			"action": "JWST_first.jpeg"
-		        }
-		]
+	{
+		"label": "Gorgeous Jupiter",
+		"action": "1_hubble.jpeg"
+	},
+	{
+		"label": "Giant Nebula",
+		"action": "2_hubble.jpeg"
+	},
+	{
+		"label": "Westerlund 2",
+		"action": "3_hubble.jpeg"
+	},
+	{
+		"label": "Eagle Nebula Pillars of Creation",
+		"action": "4_hubble.jpeg"
+	},
+	{
+		"label": "Molten Ring",
+		"action": "5_hubble.jpeg"
+	},
+	{
+		"label": "Webb's First Deep Field",
+		"action": "JWST_first.jpeg"
+	}
+]
 githublink = 'https://github.com/vkhvan/201-chuck_norris-callback'
 heading1='Top 5 images from Hubble Telescope. And finally first image from an amazing JWST!'
 
@@ -64,7 +64,7 @@ app.layout = html.Div([
 def display_value(choice):
     label = list_of_choices[choice]["label"]
     action = list_of_choices[choice]["action"]
-    return f'Enjoy this awesome image of {label}.', action
+    return f'Great choice going with a {label}.', action
 
 
 ######### Run the app #########
