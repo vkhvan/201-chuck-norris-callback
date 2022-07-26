@@ -9,27 +9,27 @@ import os
 list_of_choices=[
 	{
 		"label": "Gorgeous Jupiter",
-		"action": "1_hubble.jpeg"
+		"action": "https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-h-p2042a-f-1663x1663.png"
 	},
 	{
 		"label": "Giant Nebula",
-		"action": "2_hubble.jpeg"
+		"action": "http://www.rocketstem.org/wp-content/uploads/2015/04/001_pillars_of_creation_new.jpg"
 	},
 	{
 		"label": "Westerlund 2",
-		"action": "3_hubble.jpeg"
+		"action": "https://stsci-opo.org/STScI-01EVSTDDQX4KCV1CPTPPEEFNYB.png"
 	},
 	{
 		"label": "Eagle Nebula Pillars of Creation",
-		"action": "4_hubble.jpeg"
+		"action": "https://www.nasa.gov/sites/default/files/thumbnails/image/pillars_of_creation.jpg"
 	},
 	{
 		"label": "Molten Ring",
-		"action": "5_hubble.jpeg"
+		"action": "https://www.nasa.gov/sites/default/files/thumbnails/image/potw2050a.jpg"
 	},
 	{
 		"label": "Webb's First Deep Field",
-		"action": "JWST_first.jpeg"
+		"action": "https://s.hdnux.com/photos/01/26/47/23/22705401/3/1200x0.jpg"
 	}
 ]
 githublink = 'https://github.com/vkhvan/201-chuck_norris-callback'
