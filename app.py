@@ -34,6 +34,7 @@ list_of_choices=[
 ]
 githublink = 'https://github.com/vkhvan/201-chuck_norris-callback'
 heading1='Top 5 images from Hubble Telescope. And finally first image from an amazing JWST!'
+image1='https://mediaproxy.salon.com/width/1200/https://media.salon.com/2022/04/hubble-space-telescope-0420221.jpg'
 
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
