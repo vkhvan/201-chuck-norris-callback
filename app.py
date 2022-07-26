@@ -13,7 +13,7 @@ list_of_choices=[
 	},
 	{
 		"label": "Giant Nebula",
-		"action": "http://www.rocketstem.org/wp-content/uploads/2015/04/001_pillars_of_creation_new.jpg"
+		"action": "https://cdn.spacetelescope.org/archives/images/wallpaper2/heic2007a.jpg"
 	},
 	{
 		"label": "Westerlund 2",
