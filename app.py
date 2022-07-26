@@ -2,6 +2,7 @@
 import dash
 from dash import dcc
 from dash import html
+from dash.dependencies import Input, Output, State
 import os
 
 ###### Set up variables
@@ -31,7 +32,7 @@ list_of_choices=[
 			"action": "JWST_first.jpeg"
 		        }
 		]
-githublink = 'https://github.com/vkhvan/chuck_norris_execution'
+githublink = 'https://github.com/vkhvan/201-chuck_norris-callback'
 heading1='Top 5 images from Hubble Telescope. And finally first image from an amazing JWST!'
 
 ########### Initiate the app
