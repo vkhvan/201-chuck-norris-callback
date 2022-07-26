@@ -8,7 +8,7 @@ import os
 list_of_choices=[
 			{
 			"label": "Gorgeous Jupiter",
-			"action": '1_hubble.jpeg'
+			"action": "1_hubble.jpeg"
 		        },
 		        {
 			"label": "Giant Nebula",
@@ -60,11 +60,10 @@ app.layout = html.Div([
 ######### Interactive callbacks go here #########
 @app.callback([Output('your-output-here', 'children'), Output('action', 'src')],
               [Input('your-input-here', 'value')])
-## def display_value(whatever_you_chose):
 def display_value(choice):
     label = list_of_choices[choice]["label"]
     action = list_of_choices[choice]["action"]
-    return f'Enjoy this beautiful image of  {choice}.'
+    return f'Great choice going with a {label}.', action
 
 
 ######### Run the app #########
